@@ -2,9 +2,43 @@
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+background-color: #222;
 }
 html,
 body {
 height: 100%;
 width: 100%;
+}
+
+.btn {
+    width: 250px;
+    height: 100px;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(115deg, #ff5733, #ff33f5, #33a1ff, #33ff57, #ff5733);
+    place-items: center;
+
+}
+
+    .main-part {
+
+        font-size: 2rem;
+        width: 92%;
+        height: 84%;
+        place-content: center;
+        color: #eee;
+    }
+
+.btn:hover {
+    animation: animate 0.4s linear infinite;
+}
+
+@keyframes animate {
+    100% {
+        filter: hue-rotate(-360deg);
+    }
 }
